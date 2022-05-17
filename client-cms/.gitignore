@@ -1,0 +1,7 @@
+node_modules
+.cache
+dist
+.firebase
+.firebaserc
+firebase.json
+.firebase/hosting.ZGlzdA.cache

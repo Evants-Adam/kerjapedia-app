@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Catamaran', sans-serif;
+}
+
+.logo-login-page {
+    font-size: 40px;
+    font-weight: 555;
+    text-align: center;
+    color: rgb(12, 54, 90);
+    border-radius: 12px;
+}
+
+.sidebar {
+    position: fixed;
+    height: 80px;
+    width: 240px;
+    background: rgb(12, 54, 90);
+    transition: all 0.5s ease;
+}
+
+.content-dashboard nav .sidebar-button{
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+nav .sidebar-button i{
+    font-size: 35px;
+}
+
+#profile-user .username {
+    color:rgb(12, 54, 90);
+}
+
+
+#menu-link {
+    display: flex;
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(12, 54, 90);
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    transition: all 0.5s ease;
+}
+
+#menu-link i {
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    font-size: 35px;
+    align-items: center;
+    text-align: center;
+    height: 50%;
+    height: 80px;
+}
+
+#menu-link.selected {
+    color: aliceblue;
+    background:rgb(12, 54, 90);
+}
+
+#menu-link:hover {
+    color: aliceblue;
+    background:rgb(12, 54, 90);
+}
+
+.sidebar .logo-sidebar {
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar .logo-sidebar i {
+    font-size: 25px;
+    font-weight: 600;
+    color: #fff;
+    min-width: 60px;
+    text-align: center;
+}
+
+.sidebar .logo-sidebar .logo-name {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.sidebar .sidebar-menu {
+    margin-top: 15px;
+}
+
+.sidebar .sidebar-menu li {
+    position: relative;
+    list-style: none;
+    height: 50px;
+}
+
+.sidebar .sidebar-menu li #menu-link {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.sidebar .sidebar-menu li #menu-link.selected {
+    color: rgb(12, 54, 90);
+    background: rgb(12, 54, 90);
+}
+
+.sidebar .sidebar-menu li #menu-link:hover {
+    color: rgb(12, 54, 90);
+    background: rgb(12, 54, 90);
+    
+}
+
+.sidebar .sidebar-menu li i {
+    min-width: 60px;
+    text-align: center;
+    font-size: 22px;
+    color: #fff;
+}
+
+.sidebar .sidebar-menu li a .menu-name {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+nav .profile-details img {
+    height: 50px;
+    width: 50px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+nav .profile-details .username {
+    display: flex;
+    font-size: 20px;
+    font-weight: 500;
+    color: #1d1d11;
+    margin: 0 10px;
+    white-space: nowrap;
+}
+
+nav .profile-details i {
+    font-size: 20px;
+    color: #1d1d11;
+}
+
+.content-dashboard{
+    position: relative;
+    background: #fff;
+    min-height: 100px;
+    transition: all 0.5s ease;
+}
+
+.sidebar.active ~ .content-dashboard{
+    width: calc(100% - 60px);
+    left: 60px;
+}
+
+.content-dashboard nav{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    background: #fff;
+    align-items: center;
+    position: fixed;
+    width: calc(100% - 240px);
+    left: 240px;
+    z-index: 100;
+    padding: 0 20px 0 0;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease;
+}
+
+.sidebar.active ~ .content-dashboard nav{
+    left: 60px;
+    width: calc(100% - 60px);
+}
+
