@@ -1,0 +1,38 @@
+{
+  "name": "p2-e-commerce-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV=development npx nodemon app.js",
+    "start": "node bin/www",
+    "test": "npx jest --verbose --detectOpenHandles --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Evants-Adam/p2-e-commerce-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Evants-Adam/p2-e-commerce-server/issues"
+  },
+  "homepage": "https://github.com/Evants-Adam/p2-e-commerce-server#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "google-auth-library": "^7.11.0",
+    "jsonwebtoken": "^8.5.1",
+    "pg": "^8.7.1",
+    "sequelize": "^6.12.5"
+  },
+  "devDependencies": {
+    "dotenv": "^11.0.0",
+    "jest": "^27.5.1",
+    "nodemon": "^2.0.15",
+    "sequelize-cli": "^6.3.0",
+    "supertest": "^6.2.2"
+  }
+}
